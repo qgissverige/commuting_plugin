@@ -1,0 +1,1797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CommutingAnalysisDialogBase</class>
+ <widget class="QDialog" name="CommutingAnalysisDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>817</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Commuting Analysis</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="3">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="tab_a">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <attribute name="title">
+       <string>Clusters</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="9" column="0">
+        <widget class="QComboBox" name="cb_from_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_21">
+         <item>
+          <widget class="QComboBox" name="cb_tbl_data_a">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tb_tbl_data_a">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="lbl_nbr_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>C3. Column with the number of relationships</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="lbl_to_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>C2. Id-column for destination points</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="lbl_tbl_data_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>C. Data table layer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QComboBox" name="cb_id_points_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lbl_network_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>B. Line Layer (Network)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QComboBox" name="cb_nbr_a"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_points_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>A. Point layer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_id_points_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>A1. Id-column points</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" rowspan="17">
+        <widget class="QgsCollapsibleGroupBox" name="mGroupBox_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>Help</string>
+         </property>
+         <property name="saveCollapsedState">
+          <bool>false</bool>
+         </property>
+         <widget class="QTextEdit" name="text_edit_a">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>361</width>
+            <height>421</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="palette">
+           <palette>
+            <active>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>240</red>
+                <green>240</green>
+                <blue>240</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </active>
+            <inactive>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>240</red>
+                <green>240</green>
+                <blue>240</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </inactive>
+            <disabled>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>240</red>
+                <green>240</green>
+                <blue>240</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </disabled>
+           </palette>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustIgnored</enum>
+          </property>
+          <property name="documentTitle">
+           <string/>
+          </property>
+          <property name="lineWrapMode">
+           <enum>QTextEdit::WidgetWidth</enum>
+          </property>
+          <property name="lineWrapColumnOrWidth">
+           <number>0</number>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;The plugin consists of three functions: &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Network&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; and &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Grid Cells&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;This function identifies key points (which constitute so-called Clusters) in a network based on the inflow and outflow of relationships, such as, for example, work commuting. By utilizing three types of data: a point layer, a line layer, and a data table layer with relationships between the points, it is possible to map which points are connected in functional areas based on relationships between these. Clusters are points where the inflow is greater than the outflow, and in the case of work commuting, this might involve larger urban areas with a concentration of workplaces to which there is significant commuting from surrounding urban areas.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;INPUT&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;A. Point Layer&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Should contain a column with a unique id (A1). &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;B. Line Layer (Network)&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;A network layer that connects the points in the point layer. This layer is used to connect the points in the visualization created when the function is run. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;C. Data table layer&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Should contain a column with a unique id for starting points (C1) and destination points (C2) as well as a column with the number of relationships between these (C3). &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;D. Advanced Parameters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;D1. Threshold value for all relationships determines how high a proportion of relationships to other points is allowed for a point to be defined as a Cluster or Solitaire. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;D2. Threshold value for a relationship to any other single point determines how high a proportion of any single relationship to another point is allowed for a point to be defined as a Cluster or Solitaire. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;D3. Buffer, width (m). Specifies the width of the buffer that is created around the points in a Cluster as well as the lines that connect these points. It is specified in meters. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Description of the Calculations&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;1. Identify Clusters: First, the points that can be defined as &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; are identified. A &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Cluster&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; is a point that attracts relationships from other points in a system. For a point to be classified as a cluster, it must meet two specific criteria: &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;   - Criterion 1 – Threshold for total relationships: the total number of relationships from the point to other places must not exceed the chosen threshold for total relationships. The threshold value for all relationships in D1 can be set by the user. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;   - Criterion 2 – Threshold for individual relationship: No single relationship from the point to another point may exceed the chosen threshold for an individual relationship. This threshold ensures that the point does not have a large proportion of relationships to any other single point. The threshold value for a relationship to any other single point can be set by the user in D2. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;2. Connect Other Points to the Clusters: Next, it is determined which other points can be connected to these &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;. Each point that is not a &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Cluster&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; is connected to the cluster to which it has the largest relationship. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;3. Identify Solitaries: If a point is defined as a cluster when the total number of relationships and another individual relationship falls below the threshold values but does not have any other points connected to it, they are defined as &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Solitaries&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;. This means that they have few relationships to surrounding points. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;4. Definition of &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Primary&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; and &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Secondary Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;: Finally, &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Primary&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; and &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Secondary Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; in the system are defined. &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Primary Custers&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; are those defined above. &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Secondary clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; are points that belong to another Cluster but also have other points connected to them as these points have relationships to the &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Secondary Cluster &lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;that exceed the threshold for individual relationships or total relationships, and where the secondary cluster is the largest relationship. This means that even though they belong to a larger &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Cluster&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, they themselves function as a smaller &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Cluster &lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;for other points. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;This methodology gives us a better understanding of how different parts of a system are interconnected, providing a picture of larger and smaller &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; within the network. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;  &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;RESULT&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;The result of the function is a point layer where points are visualized based on whether they are &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, Secondary &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Solitaries&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, or &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Satellites&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; (i.e., if they belong to another &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Cluster&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;) and a polygon layer that connects all points in the same cluster via the network. The buffer indicates how wide the polygon around the urban areas and the lines in the network should be.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QComboBox" name="cb_to_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="QgsCollapsibleGroupBox" name="mGroupBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>300</width>
+           <height>200</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="title">
+          <string>D. Advanced parameters</string>
+         </property>
+         <property name="collapsed">
+          <bool>false</bool>
+         </property>
+         <property name="scrollOnExpand">
+          <bool>false</bool>
+         </property>
+         <property name="saveCollapsedState">
+          <bool>false</bool>
+         </property>
+         <property name="saveCheckedState">
+          <bool>false</bool>
+         </property>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>7</x>
+            <y>80</y>
+            <width>361</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetMinimumSize</enum>
+           </property>
+           <item>
+            <widget class="QLabel" name="lbl_advparam_a">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>D2. Threshold value for a relationship to any other single point</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sb_advparam_a">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="value">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="layoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>261</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetMinimumSize</enum>
+           </property>
+           <item>
+            <widget class="QLabel" name="lbl_advparam_b">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>D1. Threshold value for all relationships</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sb_advparam_b">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="minimum">
+              <number>1</number>
+             </property>
+             <property name="value">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="layoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>120</y>
+            <width>171</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetMinimumSize</enum>
+           </property>
+           <item>
+            <widget class="QLabel" name="lbl_advparam_c">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>D3. Buffer, width (m)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sb_advparam_c">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="minimum">
+              <number>1000</number>
+             </property>
+             <property name="maximum">
+              <number>5000</number>
+             </property>
+             <property name="singleStep">
+              <number>50</number>
+             </property>
+             <property name="value">
+              <number>1500</number>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <item>
+          <widget class="QComboBox" name="cb_points_a">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tb_points_a">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="lbl_from_a">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>C1. Id-column for starting points</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="0">
+        <widget class="QPlainTextEdit" name="txt_a">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="undoRedoEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="plainText">
+          <string/>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::NoTextInteraction</set>
+         </property>
+         <property name="backgroundVisible">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" rowspan="17">
+        <widget class="Line" name="line_a">
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_18">
+         <item>
+          <widget class="QComboBox" name="cb_network_a">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tb_network_a">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_B">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <attribute name="title">
+       <string>Network</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="1" rowspan="17">
+        <widget class="QgsCollapsibleGroupBox" name="mGroupBox_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Help</string>
+         </property>
+         <property name="saveCollapsedState">
+          <bool>false</bool>
+         </property>
+         <widget class="QTextEdit" name="text_edit_b">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>361</width>
+            <height>401</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="palette">
+           <palette>
+            <active>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>240</red>
+                <green>240</green>
+                <blue>240</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </active>
+            <inactive>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>240</red>
+                <green>240</green>
+                <blue>240</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </inactive>
+            <disabled>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>240</red>
+                <green>240</green>
+                <blue>240</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </disabled>
+           </palette>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="documentTitle">
+           <string/>
+          </property>
+          <property name="lineWrapMode">
+           <enum>QTextEdit::WidgetWidth</enum>
+          </property>
+          <property name="lineWrapColumnOrWidth">
+           <number>0</number>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;The plugin consists of three functions: &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Network&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, and &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Grid Cells&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;.   &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;The purpose of the Network function is to visualize relationships between points with a line layer (network). This can, for example, be work commuting between areas visualized with a transport network. The input data is the same as in &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-style:italic;&quot;&gt;Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, i.e., a point layer, a line layer, and a data table layer with relationships between the points, but in addition, a column for speed in the line layer and Topological Tolerance. The Topological Tolerance is used to handle situations where there is a distance between the points and the lines, specified in map units. For example, if a point is 3 meters from the network, it will still be connected to the network if the topological tolerance is 3 meters or more. The speed column is used to calculate the fastest route between starting points and destination points where there are relationships. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;INPUT&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;A. Point Layer&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Should contain a column with a unique id (A1). &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;B. Line Layer (Network)&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;A network layer that connects the points in the point layer. In this function, this layer should contain a speed column that determines the speed per segment in the network (B1). Topological tolerance is set by the user and is a measure of the possible distance from points to the network and still be included in the calculations (B2). &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;C. Data table layer&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Should contain a column with a unique id for starting points (C1) and destination points (C2) as well as a column with the number of relationships between these (C3). &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;RESULT&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;The function results in a line layer based on the line layer input, with the total number of relationships summed for each segment in the network. For all relationships, the fastest route between two points via the network's various segments are calculated based on the speed column. The number of relationships from the different routes is summed per segment in the network, thereby visualizing the parts of the network where many relationships pass on their fastest route between two points, and conversely, the parts that few routes use. In an analysis of work commuting, if an individual commutes from point A to C via B and another individual commutes from point B to C, the value will be 1 from A to B and 2 from B to C. The number of commuters on each segment of the road network can be visualized through thickness or color.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QComboBox" name="cb_id_points_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="lbl_from_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>C1. Id-column for starting points</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QComboBox" name="cb_speed_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="lbl_to_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>C2. Id-column for destination points</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_id_points_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>A1. Id-column points</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="QComboBox" name="cb_nbr_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QComboBox" name="cb_to_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="lbl_tbl_data_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>C. Data table layer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <widget class="QLabel" name="lbl_tolerance_b">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>B2. Topological Tolerance</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="sb_tolerance_b">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="maximum">
+            <number>999999</number>
+           </property>
+           <property name="value">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_points_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>A. Point Layer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="lbl_nbr_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>C3. Column with the number of relationships</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QComboBox" name="cb_points_b">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tb_points_b">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="17" column="0">
+        <widget class="QPlainTextEdit" name="txt_b">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="undoRedoEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="plainText">
+          <string/>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::NoTextInteraction</set>
+         </property>
+         <property name="backgroundVisible">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QComboBox" name="cb_from_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lbl_network_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>B. Line Layer (Network)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="lbl_speed_b">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>B1. Speed column, line layer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="QComboBox" name="cb_network_b">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tb_network_b">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="10" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QComboBox" name="cb_tbl_data_b">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tb_tbl_data_b">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_C">
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <attribute name="title">
+       <string>Grid cells</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_geometry_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>A. Grid Cells (Polygon Layer)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QComboBox" name="cb_geometry_c">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tb_geometry_c">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="1" rowspan="16">
+        <widget class="Line" name="line_c">
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_geometry_id_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>A1. Id-column</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QComboBox" name="cb_geometry_id_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lbl_tbl_data_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>B. Data Table</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QComboBox" name="cb_tbl_data_c">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QToolButton" name="tb_tbl_data_c">
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="lbl_live_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>B1. Id-column for starting cells</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QComboBox" name="cb_live_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="lbl_work_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>B2. Id-column for destination cells</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QComboBox" name="cb_work_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="lbl_value_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>B3. Column with the number of relationships</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QComboBox" name="cb_value_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="lbl_analysis_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>C. Direction of Relationships</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QComboBox" name="cb_analysis_c">
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QCheckBox" name="cbox_sel_c">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Include selected grid cells in result layer</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QPlainTextEdit" name="txt_c">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="undoRedoEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="plainText">
+          <string/>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::NoTextInteraction</set>
+         </property>
+         <property name="backgroundVisible">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="QPlainTextEdit" name="txt_c_2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>240</red>
+               <green>240</green>
+               <blue>240</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="undoRedoEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="plainText">
+          <string/>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::NoTextInteraction</set>
+         </property>
+         <property name="backgroundVisible">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" rowspan="15">
+        <widget class="QgsCollapsibleGroupBox" name="mGroupBox_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Help</string>
+         </property>
+         <property name="saveCollapsedState">
+          <bool>false</bool>
+         </property>
+         <widget class="QTextEdit" name="text_edit_c">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>361</width>
+            <height>351</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="palette">
+           <palette>
+            <active>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>237</red>
+                <green>237</green>
+                <blue>237</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </active>
+            <inactive>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>237</red>
+                <green>237</green>
+                <blue>237</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </inactive>
+            <disabled>
+             <colorrole role="Base">
+              <brush brushstyle="SolidPattern">
+               <color alpha="255">
+                <red>240</red>
+                <green>240</green>
+                <blue>240</blue>
+               </color>
+              </brush>
+             </colorrole>
+            </disabled>
+           </palette>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="documentTitle">
+           <string/>
+          </property>
+          <property name="lineWrapMode">
+           <enum>QTextEdit::WidgetWidth</enum>
+          </property>
+          <property name="lineWrapColumnOrWidth">
+           <number>0</number>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;The plugin consists of three functions: &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Clusters&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Network&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;, and &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Grid Cells&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;The purpose of the &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Grid Cells&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; function is to visualize relationships between grid cells. The user must select one or more cells with the selecting tool before the &lt;/span&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;Grid Cells&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; function can be run. Input data consists of a polygon layer with cell grids that include an id-column, a data table layer with an id-column for an origin cell, and an id-column for a destination cell, as well as a column with the number of relationships from the origin cell to the destination cell. It is possible to analyze relationships both to and from the selected cells. If the user chooses relationships TO the selected cells, all cells with relationships to the selected cells from other cells will be summed so that the number of relationships is saved in these cells. If the user chooses relationships FROM the selected cells, all cells with relationships from the selected cells to other cells in the polygon layer will be summed so that the number of relationships is saved in these cells.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;INPUT&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;A. Cell Grids (Polygon Layer)&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Should contain a column with a unique id (A1). &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;B. Data table layer&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Should contain a column with a unique id for starting cells (B1) and destination cells (B2) as well as a column with the number of relationships between these (B3). &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;C. Direction of Relationships&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;Choose whether to visualize relationships TO or FROM the selected cells, from or to other cells in the polygon layer (A). &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt; font-weight:600;&quot;&gt;RESULT&lt;/span&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;A grid cell polygon layer with all cells that have relationships to the selected cells. The number of relationships is summed per cell and visualized with different colors. The number of relationships per cell refers to relationships to or from the selected cells (depending on what the user has chosen in list box C. Direction of Relationships). If the checkbox &amp;quot;Include selected cells in the result layer&amp;quot; is checked, the selected cells will be included in the result layer and visualized with the color black.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QDialogButtonBox" name="button_box">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel</set>
+     </property>
+     <property name="centerButtons">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="pb_ok">
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="default">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsCollapsibleGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>qgscollapsiblegroupbox.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_box</sender>
+   <signal>accepted()</signal>
+   <receiver>CommutingAnalysisDialogBase</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_box</sender>
+   <signal>rejected()</signal>
+   <receiver>CommutingAnalysisDialogBase</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>20</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
