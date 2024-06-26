@@ -17,7 +17,7 @@ email = kristian.bergstrand@sweco.se
 about = This plugin analysis and visualises commuting data.
 
 tracker = https://github.com/qgissverige/commuting_plugin/issues
-repository = https://github.com/qgissverige/commuting_plugin/commuting_analysis
+repository = https://github.com/qgissverige/commuting_plugin/tree/main/commuting_analysis
 # End of mandatory metadata
 
 # Recommended items:
