@@ -7,17 +7,17 @@
 # This file should be included when you package your plugin.# Mandatory items:
 
 [general]
-name=Commuting Analysis
-qgisMinimumVersion=3.0
-description=This plugin analysis and visualises coummting data.
-version=3.0
-author=Kristian Bergstrand
-email=kristian.bergstrand@sweco.se
+name = Commuting Analysis
+qgisMinimumVersion = 3.0
+description = This plugin analysis and visualises coummting data.
+version = 3.0
+author = Kristian Bergstrand
+email = kristian.bergstrand@sweco.se
 
-about=This plugin analysis and visualises commuting data.
+about = This plugin analysis and visualises commuting data.
 
-tracker=http://github.com/qgissverige/commuting_plugin/issues
-repository=https://github.com/qgissverige/commuting_plugin/commuting_analysis
+tracker = https://github.com/qgissverige/commuting_plugin/issues
+repository = https://github.com/qgissverige/commuting_plugin/commuting_analysis
 # End of mandatory metadata
 
 # Recommended items:
@@ -26,14 +26,13 @@ repository=https://github.com/qgissverige/commuting_plugin/commuting_analysis
 # changelog=
 
 # Tags are comma separated with spaces allowed
-tags=python
+tags = python
 
-homepage=http://qgis.se
-category=Plugins
-icon=icon.png
+homepage = https://qgis.se
+category = Plugins
+icon = icon.png
 # experimental flag
-experimental=True
+experimental = True
 
 # deprecated flag (applies to the whole plugin, not just a single version)
-deprecated=False
-
+deprecated = False
