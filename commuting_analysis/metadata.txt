@@ -16,8 +16,8 @@ email=kristian.bergstrand@sweco.se
 
 about=This plugin analysis and visualises commuting data.
 
-tracker=http://bugs
-repository=http://repo
+tracker=http://github.com/qgissverige/commuting_plugin/issues
+repository=https://github.com/qgissverige/commuting_plugin/commuting_analysis
 # End of mandatory metadata
 
 # Recommended items:
@@ -28,7 +28,7 @@ repository=http://repo
 # Tags are comma separated with spaces allowed
 tags=python
 
-homepage=http://homepage
+homepage=http://qgis.se
 category=Plugins
 icon=icon.png
 # experimental flag
